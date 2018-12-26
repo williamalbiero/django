@@ -59,3 +59,4 @@ class Usuario(models.Model):
     email = models.EmailField(null=False, verbose_name="E-mail", unique=True)
     senha = models.CharField(null=False, max_length=100, validators=[MinLengthValidator(6)])
 
+

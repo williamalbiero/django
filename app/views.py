@@ -21,4 +21,7 @@ def registrado(request, template_name="registrado.html"):
     return render(request, template_name)
 
 def index(request, template_name="index.html"):
-    return render(request,template_name)
+    user = Usuario.objects.all()
+    users = {'lista' : user}
+    return render(request,template_name, users)
+

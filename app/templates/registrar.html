@@ -1,5 +1,11 @@
 {% extends 'base.html' %}
 {% load crispy_forms_tags %}
+{% block titulo_pagina %}
+    <h1>Cadastre-se</h1>
+{% endblock titulo_pagina %}
+{% block title %}
+<title>Cadastre-se</title>
+{% endblock title %}
 {% block titulo_painel %}
 Preencha as informações abaixo
 {% endblock titulo_painel %}
@@ -65,5 +71,6 @@ Preencha as informações abaixo
     <button type="submit" class="btn btn-primary">
         Salvar
     </button>
+
 </form>
 {% endblock conteudo_painel %}

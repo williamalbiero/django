@@ -1,1 +1,36 @@
 {% extends 'base.html' %}
+{% block titulo_pagina %}
+    <h1>Lista Usuários</h1>
+{% endblock titulo_pagina %}
+{% block title %}
+<title>List usuários</title>
+{% endblock title %}
+
+{% block conteudo_painel %}
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>CPF</th>
+      <th>Data de Nascimento</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for user in lista %}
+    <tr>
+      <td>{{ user.nome_completo }}</td>
+      <td>{{ user.cpf }}</td>
+      <td>{{ user.data_nascimento }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+
+    <a href="{% url 'registrar_usuario' %}">
+        <button type="submit" class="btn btn-primary">
+        Cadastrar
+        </button>
+    </a>
+
+{% endblock conteudo_painel %}
