@@ -1,1 +1,1 @@
-# django git init git add README.md git commit -m first commit git remote add origin https://github.com/williamalbiero/django.git git push -u origin master
+# Aplicação Django criada para testes, utilizando Python 3.5.2 e Django 1.11.3.
